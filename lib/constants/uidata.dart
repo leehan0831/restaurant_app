@@ -1,10 +1,10 @@
-const categories = [
+List categories = [
   {
-    "_id": "6537ece708ff5b7de97d0695",
+    "_id": "65372ec708f5b7de97d0695",
     "title": "Fried Rice",
     "value": "fried_rice",
     "imageUrl":
-        "https://www.google.com/imgres?q=fried%20rice&imgurl=https%3A%2F%2Fcicili.tv%2Fwp-content%2Fuploads%2F2024%2F08%2FChicken-Fried-Rice-Small-2-1200x900.jpg&imgrefurl=https%3A%2F%2Fcicili.tv%2Fchicken-fried-rice-recipe%2F&docid=cTKsN2ykhIQ0JM&tbnid=eEUIJRC32ta7AM&vet=12ahUKEwiO2tWbqaCNAxVWzzQHHeCxIAMQM3oECFIQAA..i&w=1200&h=900&hcb=2&ved=2ahUKEwiO2tWbqaCNAxVWzzQHHeCxIAMQM3oECFIQAA",
+        "https://th.bing.com/th/id/OIP.ug7mcOMWDCGNYWMVONgcgwHaE8?cb=iwc1&rs=1&pid=ImgDetMain",
     "createdAt": "2023-10-24T16:12:23.571Z",
     "updatedAt": "2023-10-24T16:12:23.571Z",
     "__v": 0,
@@ -14,7 +14,7 @@ const categories = [
     "title": "Curry",
     "value": "curry",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/ee2d952c-1d7d-48f7-81b3-cb967343eb6c-curry.png",
+        "https://www.cookingclassy.com/wp-content/uploads/2018/08/chicken-curry-11.jpg",
     "__v": 0,
   },
   {
@@ -22,15 +22,15 @@ const categories = [
     "title": "Pizza",
     "value": "pizza",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/466693e6-f999-42e0-8794-09325ece1b45-Pizza.png",
+        "https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg",
     "__v": 0,
   },
   {
-    "_id": "6531209dbbe4998e90af3fef",
+    "_id": "6531209dbbe4998e90af3feb",
     "title": "Pasta",
     "value": "pasta",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/6645cf41-bc89-4dd0-9f80-bba9487633b2-Spaghetti.png",
+        "https://www.jessicagavin.com/wp-content/uploads/2020/07/one-pot-pasta-9.jpg",
     "__v": 0,
   },
   {
@@ -38,7 +38,7 @@ const categories = [
     "title": "Beverages",
     "value": "beverages",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/93c4b3df-9e55-4308-a834-9fe4ad67c0b3-bar.png",
+        "https://th.bing.com/th/id/OIP.klw598PZctn0CC09feg8tQHaEk?cb=iwc1&rs=1&pid=ImgDetMain",
     "__v": 0,
   },
   {
@@ -46,7 +46,7 @@ const categories = [
     "title": "Burgers",
     "value": "burgers",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/3c94bc09-b8b9-4961-accb-f68b7e8121cc-Hamburger.png",
+        "https://th.bing.com/th/id/OIP.nycG__R01B9OVmPUIBj7-wHaEo?cb=iwc1&rs=1&pid=ImgDetMain",
     "__v": 0,
   },
   {
@@ -54,20 +54,20 @@ const categories = [
     "title": "Chicken",
     "value": "chicken",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/139718b2-2832-40c5-8d7b-11fd9feb0aac-chicken.png",
+        "https://www.licious.in/blog/wp-content/uploads/2022/06/roast-chicken.jpg",
     "__v": 0,
   },
   {
-    "_id": "653120e1bbe4998e90af3ff3",
+    "_id": "653120ebbe4998e90af3ff3",
     "title": "More",
     "value": "more",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/08323562-a3c6-461d-95a3-b3817c99871b-more.png",
+        "https://th.bing.com/th/id/OIP.hJY2VzB5fvcUTKiJxyNWzwHaD5?cb=iwc1&rs=1&pid=ImgDetMain",
     "__v": 0,
   },
 ];
 
-const restaurants = [
+const List<Map<String, dynamic>> restaurants = [
   {
     "_id": "6530ebbcc9e72013e5b65933",
     "title": "Lapisara Eatery",
@@ -180,7 +180,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 5, "title": "Sugar", "price": "0.50"},
     ],
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        "https://th.bing.com/th/id/OIP.i0EkOplXb2Y8jXa82DnpRQHaLH?cb=iwc1&rs=1&pid=ImgDetMain",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "35 min",
@@ -206,7 +206,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 5, "title": "Pasta", "price": "3.00"},
     ],
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        "https://www.cookingclassy.com/wp-content/uploads/2020/10/spaghetti-carbonara-01-1024x1536.jpg",
     "__v": 2,
     "category": "6531209dbbe4998e90af3fef",
     "time": "20 min",
@@ -232,7 +232,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 5, "title": "Vinaigrette", "price": "0.50"},
     ],
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        "https://th.bing.com/th/id/OIP.DwY9Lv7f3mst8Z74bgsVYgHaLH?cb=iwc1&rs=1&pid=ImgDetMain",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "55 min",
@@ -256,7 +256,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 3, "title": "Ketch up", "price": "0.50"},
     ],
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        "https://th.bing.com/th/id/OIP.A_7IadfotxHc56iM-XuY5AHaJd?cb=iwc1&rs=1&pid=ImgDetMain",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "30 min",
@@ -282,7 +282,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 5, "title": "Ice", "price": "0.50"},
     ],
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        "https://tatyanaseverydayfood.com/wp-content/uploads/2015/01/Fruit-Smoothie.jpg",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "25 min",
@@ -314,7 +314,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 5, "title": "Barbecue Sauce", "price": "1.00"},
     ],
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        "https://static.vecteezy.com/system/resources/previews/007/284/134/large_2x/mixed-grilled-meat-platter-assorted-delicious-grilled-meat-with-vegetable-mixed-grilled-meat-with-pepper-sauce-and-vegetables-photo.jpg",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "45 min",
@@ -332,8 +332,8 @@ const cart = [
       "rating": 4.5,
       "ratingCount": "150",
       "imageUrl": [
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        "https://cdn.loveandlemons.com/wp-content/uploads/2019/09/margherita-pizza.jpg",
+        "https://cdn.loveandlemons.com/wp-content/uploads/2019/09/margherita-pizza.jpg",
       ],
     },
     "additives": ["Extra Cheese", "Mushrooms"],
@@ -352,7 +352,7 @@ const profile = {
   "address": [],
   "userType": "Vendor",
   "profile":
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/bdec9d7d-0544-4fc4-823d-3b898f6dbbbf-vinci_03.jpeg",
+      "https://demo.zoloblocks.com/wp-content/uploads/2023/12/pro-demo0-2.webp",
   "updatedAt": "2023-10-24T11:02:28.215Z",
 };
 

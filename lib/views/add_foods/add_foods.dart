@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:restaurant_foodly/common/app_style.dart';
-import 'package:restaurant_foodly/common/background_container.dart';
-import 'package:restaurant_foodly/common/reusable_text.dart';
 import 'package:restaurant_foodly/constants/constants.dart';
+import 'package:restaurant_foodly/views/add_foods/widgets/additives_info.dart';
 import 'package:restaurant_foodly/views/add_foods/widgets/all_categories.dart';
+import 'package:restaurant_foodly/views/add_foods/widgets/food_info.dart';
 import 'package:restaurant_foodly/views/add_foods/widgets/image_uploads.dart';
+
+import '../../common/app_style.dart';
+import '../../common/background_container.dart';
+import '../../common/reusable_text.dart';
 
 class AddFoods extends StatefulWidget {
   const AddFoods({super.key});
@@ -15,9 +18,24 @@ class AddFoods extends StatefulWidget {
 
 class _AddFoodsState extends State<AddFoods> {
   final PageController _pageController = PageController();
-  int _currentPage = 0;
+  final TextEditingController title = TextEditingController();
+  final TextEditingController description = TextEditingController();
+  final TextEditingController price = TextEditingController();
+  final TextEditingController preparation = TextEditingController();
+  final TextEditingController types = TextEditingController();
+  final TextEditingController additivePrice = TextEditingController();
+  final TextEditingController additiveTitle = TextEditingController();
 
-  @override
+  void dispose() {
+    title.dispose();
+    description.dispose();
+    price.dispose();
+    preparation.dispose();
+    types.dispose();
+    _pageController.dispose();
+    super.dispose();
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Secondary,
@@ -29,17 +47,18 @@ class _AddFoodsState extends State<AddFoods> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ReusableText(
-              text: "Welcome to restaurant Panel",
+              text: "Welcome to Restaurant Panel",
               style: appStyle(14, LightWhite, FontWeight.w600),
             ),
             ReusableText(
-              text: "Fill all the required info to add food items",
+              text: "Fill all the required info",
               style: appStyle(12, LightWhite, FontWeight.normal),
             ),
           ],
         ),
       ),
       body: BackGroundContainer(
+        color: Colors.white,
         child: ListView(
           children: [
             SizedBox(
@@ -58,8 +77,13 @@ class _AddFoodsState extends State<AddFoods> {
                       );
                     },
                   ),
-
-                  ChooseCategory(
+                  ImageUploads(
+                    back: () {
+                      _pageController.previousPage(
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn,
+                      );
+                    },
                     next: () {
                       _pageController.nextPage(
                         duration: const Duration(milliseconds: 500),
@@ -67,7 +91,29 @@ class _AddFoodsState extends State<AddFoods> {
                       );
                     },
                   ),
-                  ImageUploads(),
+                  FoodInfo(
+                    back: () {
+                      _pageController.previousPage(
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn,
+                      );
+                    },
+                    next: () {
+                      _pageController.nextPage(
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn,
+                      );
+                    },
+                    title: title,
+                    description: description,
+                    price: price,
+                    preparation: preparation,
+                    types: types,
+                  ),
+                  AdditivesInfo(
+                    additivePrice: additivePrice,
+                    additiveTitle: additiveTitle,
+                  ),
                 ],
               ),
             ),

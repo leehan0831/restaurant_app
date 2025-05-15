@@ -1,9 +1,7 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:restaurant_foodly/common/app_style.dart';
 import 'package:restaurant_foodly/common/reusable_text.dart';
 import 'package:restaurant_foodly/constants/constants.dart';
@@ -13,7 +11,6 @@ import 'package:restaurant_foodly/controllers/food_controller.dart';
 class ChooseCategory extends HookWidget {
   const ChooseCategory({super.key, required this.next});
   final Function() next;
-
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(FoodController());
@@ -28,15 +25,16 @@ class ChooseCategory extends HookWidget {
               children: [
                 ReusableText(
                   text: "Pick Category",
-                  style: appStyle(16, kGray, FontWeight.w600),
+                  style: appStyle(10, kGray, FontWeight.w600),
                 ),
+
                 ReusableText(
                   text:
                       "You are to pick a category to continue adding a food item",
                   style: appStyle(11, kGray, FontWeight.normal),
                 ),
               ],
-            ),
+            ), // Column
           ),
           SizedBox(
             height: height * 0.8,
@@ -46,7 +44,7 @@ class ChooseCategory extends HookWidget {
                 final category = categories[i];
                 return ListTile(
                   onTap: () {
-                    controller.setCategory = category["_id"];
+                    controller.setCategory = category['_id'];
                     next();
                   },
                   leading: CircleAvatar(

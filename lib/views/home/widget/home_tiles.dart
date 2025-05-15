@@ -33,7 +33,7 @@ class HomeTiles extends StatelessWidget {
               );
             },
             text: "Add Foods",
-            iconPath: "assets/icons/taco.svg",
+            iconPath: "assets/icons/tacos.svg",
           ),
           HomeTile(
             onTap: () {},

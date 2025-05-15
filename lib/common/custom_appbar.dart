@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:restaurant_foodly/constants/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+class CustomAppbar extends StatelessWidget {
+  const CustomAppbar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class CustomAppBar extends StatelessWidget {
                 ),
 
                 Text(
-                  "184 Lafoods",
+                  "1874 LaFoods Street Union City, NJ 07087",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 12.sp,

@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Secondary,
-        flexibleSpace: const CustomAppBar(),
+        flexibleSpace: const CustomAppbar(),
       ),
 
       body: BackGroundContainer(

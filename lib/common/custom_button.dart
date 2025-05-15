@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:restaurant_foodly/common/app_style.dart';
 import 'package:restaurant_foodly/common/reusable_text.dart';
-import 'package:restaurant_foodly/constants/constants.dart';
+
+import '../constants/constants.dart';
+import 'app_style.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -10,8 +11,8 @@ class CustomButton extends StatelessWidget {
     this.onTap,
     this.btnWidth,
     this.btnHeight,
-    this.btnRadius,
     this.btnColor,
+    this.btnRadius,
     required this.text,
   });
 
@@ -27,11 +28,11 @@ class CustomButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: btnWidth ?? width,
+        width: btnWidth ?? 78.w,
         height: btnHeight ?? 28.h,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(btnRadius ?? 12.r),
-          color: btnColor ?? kPrimary,
+          color: btnColor ?? kPrimary, // BoxDecoration
         ),
         child: Center(
           child: ReusableText(
@@ -39,7 +40,7 @@ class CustomButton extends StatelessWidget {
             style: appStyle(12, LightWhite, FontWeight.w500),
           ),
         ),
-      ),
-    );
+      ), // Container
+    ); // GestureDetector
   }
 }
